@@ -1,0 +1,97 @@
+    1  ls
+    2  whoami
+    3  who
+    4  id
+    5  w
+    6  last
+    7  uname -a
+    8  cat /proc/cpuinfo
+    9  cat/proc/meminfo
+   10  cat/proc/partitions
+   11  cat /proc/meminfo
+   12  cat /proc/partitions
+   13  free -h
+   14  df -h
+   15  Isb_release -a
+   16  lsb_release -a
+   17  lsblk
+   18  lscpu
+   19  ps aux
+   20  top
+   21  history
+   22  exit
+   23  fdisk -l
+   24  sudo fdisk -l
+   25  sudo fdisk /dev/sdb
+   26  sudo fdisk -l
+   27  sudo mkfs.ext4 /dev/sdb1
+   28  sudo mkfs.ext4 /dev/sdb2
+   29  sudo mkfs.ext4 /dev/sdb5
+   30  sudo mkfs.ext4 /dev/sdb6
+   31  ls -l /mnt/
+   32  sudo mkdir -p /mnt/{sdb1,sdb2,sdb5,sdb6}
+   33  ls -l /mnt/
+   34  df -h
+   35  sudo mount /dev/sdb1 /mnt/sdb1
+   36  sudo mount /dev/sdb2 /mnt/sdb2
+   37  sudo mount /dev/sdb5 /mnt/sdb5
+   38  sudo mount /dev/sdb6 /mnt/sdb6
+   39  df -h
+   40  free
+   41  free -h
+   42  sudo fdisk /dev/sdb
+   43  sudo mkswap /dev/sdb3
+   44  sudo swapon /dev/sdb3
+   45  free -h
+   46  free
+   47  exit
+   48  fdisk -l
+   49  sudo fdisk -l
+   50  sudo fdisk /dev/sdc
+   51  sudo fdisk -l
+   52  sudo fdisk /dev/sdc
+   53  free
+   54  free -h
+   55  sudo mkswap /dev/sdc1
+   56  sudo swapon /dev/sdc1
+   57  free -h
+   58  swapon -s
+   59  cat /proc/swaps
+   60  exit
+   61  sudo fdisk -l
+   62  sudo fdisk /dev/sdd
+   63  p
+   64  sudo fdisk -l
+   65  sudo fdisk /dev/sdd
+   66  sudo fdisk -l
+   67  sudo wipefs -a /dev/sdc2
+   68  sudo wipefs -a /dev/sdc3
+   69  sudo wipefs -a /dev/sdc5
+   70  sudo wipefs -a /dev/sdc6
+   71  sudo wipefs -a /dev/sdd1
+   72  sudo wipefs -a /dev/sdd2
+   73  sudo pvcreate /dev/sdc2 /dev/sdc3 /dev/sdc5 /dev/sdc6 /dev/sdd1 /dev/sdd2
+   74  sudo pvs
+   75  sudo vgcreate vg_datos /dev/sdd1 /dev/sdc2
+   76  sudo vgs
+   77  sudo pvs
+   78  sudo vgcreate vg_web /dev/sdd2
+   79  sudo pvs
+   80  sudo lvcreate -L 1G vg_web -n lv_web1
+   81  sudo lvcreate -L 512M vg_web -n lv_web2
+   82  sudo lvcreate -L 512M vg_web -n lv_web3
+   83  sudo lvs
+   84  sudo pvs
+   85  sudo fdisk -l
+   86  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   87  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   88  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   89  ls -l
+   90  git clone https://github.com/TaiCap/TP2_Capizzi_Taiel.git
+   91  ls -l
+   92  cd TP2_Capizzi_Taiel/
+   93  ls -l
+   94  sudo pvs > pvs.txt
+   95  sudo vgs > vgs.txt
+   96  sudo lvs > lvs.txt
+   97  history > historial_lvm.txt
